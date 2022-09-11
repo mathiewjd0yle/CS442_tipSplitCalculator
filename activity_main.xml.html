@@ -1,0 +1,282 @@
+<html>
+<head>
+<title>activity_main.xml</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #e8bf6a;}
+.s1 { color: #bababa;}
+.s2 { color: #6a8759;}
+.s3 { color: #a9b7c6;}
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+activity_main.xml</font>
+</center></td></tr></table>
+<pre><span class="s0">&lt;?</span><span class="s1">xml version</span><span class="s2">=&quot;1.0&quot; </span><span class="s1">encoding</span><span class="s2">=&quot;utf-8&quot;</span><span class="s0">?&gt;</span>
+<span class="s0">&lt;androidx.constraintlayout.widget.ConstraintLayout </span><span class="s1">xmlns:android</span><span class="s2">=&quot;http://schemas.android.com/apk/res/android&quot;</span>
+    <span class="s1">xmlns:app</span><span class="s2">=&quot;http://schemas.android.com/apk/res-auto&quot;</span>
+    <span class="s1">xmlns:tools</span><span class="s2">=&quot;http://schemas.android.com/tools&quot;</span>
+    <span class="s1">android:layout_width</span><span class="s2">=&quot;match_parent&quot;</span>
+    <span class="s1">android:layout_height</span><span class="s2">=&quot;match_parent&quot;</span>
+    <span class="s1">android:onClick</span><span class="s2">=&quot;totalCalculator&quot;</span>
+    <span class="s1">tools:context</span><span class="s2">=&quot;.MainActivity&quot;</span><span class="s0">&gt;</span>
+
+    <span class="s0">&lt;TextView</span>
+        <span class="s1">android:id</span><span class="s2">=&quot;@+id/total_with_tip&quot;</span>
+        <span class="s1">android:layout_width</span><span class="s2">=&quot;wrap_content&quot;</span>
+        <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span>
+        <span class="s1">android:layout_marginTop</span><span class="s2">=&quot;164dp&quot;</span>
+        <span class="s1">android:background</span><span class="s2">=&quot;#8C575454&quot;</span>
+        <span class="s1">android:backgroundTint</span><span class="s2">=&quot;#8C575454&quot;</span>
+        <span class="s1">app:layout_constraintBottom_toBottomOf</span><span class="s2">=&quot;parent&quot;</span>
+        <span class="s1">app:layout_constraintEnd_toEndOf</span><span class="s2">=&quot;parent&quot;</span>
+        <span class="s1">app:layout_constraintHorizontal_bias</span><span class="s2">=&quot;0.501&quot;</span>
+        <span class="s1">app:layout_constraintStart_toStartOf</span><span class="s2">=&quot;parent&quot;</span>
+        <span class="s1">app:layout_constraintTop_toTopOf</span><span class="s2">=&quot;parent&quot;</span>
+        <span class="s1">app:layout_constraintVertical_bias</span><span class="s2">=&quot;0.093&quot; </span><span class="s0">/&gt;</span>
+
+    <span class="s0">&lt;TextView</span>
+        <span class="s1">android:id</span><span class="s2">=&quot;@+id/totalIndicator&quot;</span>
+        <span class="s1">android:layout_width</span><span class="s2">=&quot;wrap_content&quot;</span>
+        <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span>
+        <span class="s1">android:layout_marginStart</span><span class="s2">=&quot;16dp&quot;</span>
+        <span class="s1">android:layout_marginTop</span><span class="s2">=&quot;164dp&quot;</span>
+        <span class="s1">android:text</span><span class="s2">=&quot;@string/total_with_tip&quot;</span>
+        <span class="s1">android:textStyle</span><span class="s2">=&quot;bold&quot;</span>
+        <span class="s1">app:layout_constraintBottom_toBottomOf</span><span class="s2">=&quot;parent&quot;</span>
+        <span class="s1">app:layout_constraintEnd_toEndOf</span><span class="s2">=&quot;parent&quot;</span>
+        <span class="s1">app:layout_constraintHorizontal_bias</span><span class="s2">=&quot;0.0&quot;</span>
+        <span class="s1">app:layout_constraintStart_toStartOf</span><span class="s2">=&quot;parent&quot;</span>
+        <span class="s1">app:layout_constraintTop_toTopOf</span><span class="s2">=&quot;parent&quot;</span>
+        <span class="s1">app:layout_constraintVertical_bias</span><span class="s2">=&quot;0.093&quot; </span><span class="s0">/&gt;</span>
+
+    <span class="s0">&lt;EditText</span>
+        <span class="s1">android:id</span><span class="s2">=&quot;@+id/bill_total&quot;</span>
+        <span class="s1">android:layout_width</span><span class="s2">=&quot;0dp&quot;</span>
+        <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span>
+        <span class="s1">android:layout_marginStart</span><span class="s2">=&quot;170dp&quot;</span>
+        <span class="s1">android:layout_marginTop</span><span class="s2">=&quot;24dp&quot;</span>
+        <span class="s1">android:layout_marginEnd</span><span class="s2">=&quot;30dp&quot;</span>
+        <span class="s1">android:background</span><span class="s2">=&quot;#55000000&quot;</span>
+        <span class="s1">android:backgroundTint</span><span class="s2">=&quot;#558BC34A&quot;</span>
+        <span class="s1">android:ems</span><span class="s2">=&quot;10&quot;</span>
+        <span class="s1">android:hint</span><span class="s2">=&quot;@string/enter_total_with_tax&quot;</span>
+        <span class="s1">android:inputType</span><span class="s2">=&quot;numberDecimal&quot;</span>
+        <span class="s1">android:minHeight</span><span class="s2">=&quot;40dp&quot;</span>
+        <span class="s1">android:textAlignment</span><span class="s2">=&quot;center&quot;</span>
+        <span class="s1">android:textColorHint</span><span class="s2">=&quot;#546E7A&quot;</span>
+        <span class="s1">app:layout_constraintEnd_toEndOf</span><span class="s2">=&quot;parent&quot;</span>
+        <span class="s1">app:layout_constraintHorizontal_bias</span><span class="s2">=&quot;0.0&quot;</span>
+        <span class="s1">app:layout_constraintStart_toStartOf</span><span class="s2">=&quot;parent&quot;</span>
+        <span class="s1">app:layout_constraintTop_toTopOf</span><span class="s2">=&quot;parent&quot; </span><span class="s0">/&gt;</span>
+
+    <span class="s0">&lt;RadioGroup</span>
+        <span class="s1">android:id</span><span class="s2">=&quot;@+id/tip_amounts&quot;</span>
+        <span class="s1">android:layout_width</span><span class="s2">=&quot;0dp&quot;</span>
+        <span class="s1">android:layout_height</span><span class="s2">=&quot;40dp&quot;</span>
+        <span class="s1">android:layout_marginStart</span><span class="s2">=&quot;80dp&quot;</span>
+        <span class="s1">android:layout_marginTop</span><span class="s2">=&quot;100dp&quot;</span>
+        <span class="s1">android:layout_marginEnd</span><span class="s2">=&quot;50dp&quot;</span>
+        <span class="s1">android:onClick</span><span class="s2">=&quot;totalCalculator&quot;</span>
+        <span class="s1">android:orientation</span><span class="s2">=&quot;horizontal&quot;</span>
+        <span class="s1">app:layout_constraintBottom_toBottomOf</span><span class="s2">=&quot;parent&quot;</span>
+        <span class="s1">app:layout_constraintEnd_toEndOf</span><span class="s2">=&quot;parent&quot;</span>
+        <span class="s1">app:layout_constraintHorizontal_bias</span><span class="s2">=&quot;0.0&quot;</span>
+        <span class="s1">app:layout_constraintStart_toStartOf</span><span class="s2">=&quot;parent&quot;</span>
+        <span class="s1">app:layout_constraintTop_toTopOf</span><span class="s2">=&quot;parent&quot;</span>
+        <span class="s1">app:layout_constraintVertical_bias</span><span class="s2">=&quot;0.0&quot;</span><span class="s0">&gt;</span>
+
+        <span class="s0">&lt;RadioButton</span>
+            <span class="s1">android:id</span><span class="s2">=&quot;@+id/twelve_percent&quot;</span>
+            <span class="s1">android:layout_width</span><span class="s2">=&quot;wrap_content&quot;</span>
+            <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span>
+            <span class="s1">android:buttonTint</span><span class="s2">=&quot;#1935D3&quot;</span>
+            <span class="s1">android:checked</span><span class="s2">=&quot;false&quot;</span>
+            <span class="s1">android:onClick</span><span class="s2">=&quot;totalCalculator&quot;</span>
+            <span class="s1">android:text</span><span class="s2">=&quot;@string/_12&quot; </span><span class="s0">/&gt;</span>
+
+        <span class="s0">&lt;RadioButton</span>
+            <span class="s1">android:id</span><span class="s2">=&quot;@+id/fifteen_percent&quot;</span>
+            <span class="s1">android:layout_width</span><span class="s2">=&quot;wrap_content&quot;</span>
+            <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span>
+            <span class="s1">android:buttonTint</span><span class="s2">=&quot;#1935D3&quot;</span>
+            <span class="s1">android:checked</span><span class="s2">=&quot;false&quot;</span>
+            <span class="s1">android:onClick</span><span class="s2">=&quot;totalCalculator&quot;</span>
+            <span class="s1">android:text</span><span class="s2">=&quot;@string/_15&quot; </span><span class="s0">/&gt;</span>
+
+        <span class="s0">&lt;RadioButton</span>
+            <span class="s1">android:id</span><span class="s2">=&quot;@+id/eighteen_percent&quot;</span>
+            <span class="s1">android:layout_width</span><span class="s2">=&quot;wrap_content&quot;</span>
+            <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span>
+            <span class="s1">android:buttonTint</span><span class="s2">=&quot;#1935D3&quot;</span>
+            <span class="s1">android:onClick</span><span class="s2">=&quot;totalCalculator&quot;</span>
+            <span class="s1">android:text</span><span class="s2">=&quot;@string/_18&quot; </span><span class="s0">/&gt;</span>
+
+        <span class="s0">&lt;RadioButton</span>
+            <span class="s1">android:id</span><span class="s2">=&quot;@+id/twenty_percent&quot;</span>
+            <span class="s1">android:layout_width</span><span class="s2">=&quot;wrap_content&quot;</span>
+            <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span>
+            <span class="s1">android:buttonTint</span><span class="s2">=&quot;#1935D3&quot;</span>
+            <span class="s1">android:onClick</span><span class="s2">=&quot;totalCalculator&quot;</span>
+            <span class="s1">android:text</span><span class="s2">=&quot;@string/_20&quot; </span><span class="s0">/&gt;</span>
+    <span class="s0">&lt;/RadioGroup&gt;</span>
+
+    <span class="s0">&lt;TextView</span>
+        <span class="s1">android:id</span><span class="s2">=&quot;@+id/tip_prompt&quot;</span>
+        <span class="s1">android:layout_width</span><span class="s2">=&quot;wrap_content&quot;</span>
+        <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span>
+        <span class="s1">android:layout_marginStart</span><span class="s2">=&quot;16dp&quot;</span>
+        <span class="s1">android:layout_marginTop</span><span class="s2">=&quot;40dp&quot;</span>
+        <span class="s1">android:text</span><span class="s2">=&quot;@string/choose_a_tip_percentage&quot;</span>
+        <span class="s1">android:textSize</span><span class="s2">=&quot;14sp&quot;</span>
+        <span class="s1">android:textStyle</span><span class="s2">=&quot;bold&quot;</span>
+        <span class="s1">app:layout_constraintBottom_toBottomOf</span><span class="s2">=&quot;parent&quot;</span>
+        <span class="s1">app:layout_constraintStart_toStartOf</span><span class="s2">=&quot;parent&quot;</span>
+        <span class="s1">app:layout_constraintTop_toTopOf</span><span class="s2">=&quot;parent&quot;</span>
+        <span class="s1">app:layout_constraintVertical_bias</span><span class="s2">=&quot;0.057&quot; </span><span class="s0">/&gt;</span>
+
+    <span class="s0">&lt;TextView</span>
+        <span class="s1">android:id</span><span class="s2">=&quot;@+id/tipIndicator&quot;</span>
+        <span class="s1">android:layout_width</span><span class="s2">=&quot;wrap_content&quot;</span>
+        <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span>
+        <span class="s1">android:layout_marginStart</span><span class="s2">=&quot;16dp&quot;</span>
+        <span class="s1">android:layout_marginTop</span><span class="s2">=&quot;164dp&quot;</span>
+        <span class="s1">android:text</span><span class="s2">=&quot;@string/tip_amount&quot;</span>
+        <span class="s1">android:textStyle</span><span class="s2">=&quot;bold&quot;</span>
+        <span class="s1">app:layout_constraintBottom_toBottomOf</span><span class="s2">=&quot;parent&quot;</span>
+        <span class="s1">app:layout_constraintEnd_toEndOf</span><span class="s2">=&quot;parent&quot;</span>
+        <span class="s1">app:layout_constraintHorizontal_bias</span><span class="s2">=&quot;0.0&quot;</span>
+        <span class="s1">app:layout_constraintStart_toStartOf</span><span class="s2">=&quot;parent&quot;</span>
+        <span class="s1">app:layout_constraintTop_toTopOf</span><span class="s2">=&quot;parent&quot;</span>
+        <span class="s1">app:layout_constraintVertical_bias</span><span class="s2">=&quot;0.0&quot; </span><span class="s0">/&gt;</span>
+
+    <span class="s0">&lt;TextView</span>
+        <span class="s1">android:id</span><span class="s2">=&quot;@+id/total_prompt&quot;</span>
+        <span class="s1">android:layout_width</span><span class="s2">=&quot;wrap_content&quot;</span>
+        <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span>
+        <span class="s1">android:layout_marginStart</span><span class="s2">=&quot;20dp&quot;</span>
+        <span class="s1">android:layout_marginTop</span><span class="s2">=&quot;32dp&quot;</span>
+        <span class="s1">android:text</span><span class="s2">=&quot;@string/bill_total_with_tax&quot;</span>
+        <span class="s1">android:textSize</span><span class="s2">=&quot;14sp&quot;</span>
+        <span class="s1">android:textStyle</span><span class="s2">=&quot;bold&quot;</span>
+        <span class="s1">app:layout_constraintStart_toStartOf</span><span class="s2">=&quot;parent&quot;</span>
+        <span class="s1">app:layout_constraintTop_toTopOf</span><span class="s2">=&quot;parent&quot; </span><span class="s0">/&gt;</span>
+
+    <span class="s0">&lt;TextView</span>
+        <span class="s1">android:id</span><span class="s2">=&quot;@+id/tip_amount&quot;</span>
+        <span class="s1">android:layout_width</span><span class="s2">=&quot;wrap_content&quot;</span>
+        <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span>
+        <span class="s1">android:layout_marginTop</span><span class="s2">=&quot;164dp&quot;</span>
+        <span class="s1">android:background</span><span class="s2">=&quot;#8C575454&quot;</span>
+        <span class="s1">android:backgroundTint</span><span class="s2">=&quot;#8C575454&quot;</span>
+        <span class="s1">app:layout_constraintEnd_toEndOf</span><span class="s2">=&quot;parent&quot;</span>
+        <span class="s1">app:layout_constraintStart_toStartOf</span><span class="s2">=&quot;parent&quot;</span>
+        <span class="s1">app:layout_constraintTop_toTopOf</span><span class="s2">=&quot;parent&quot; </span><span class="s0">/&gt;</span>
+
+    <span class="s0">&lt;View</span>
+        <span class="s1">android:id</span><span class="s2">=&quot;@+id/divider&quot;</span>
+        <span class="s1">android:layout_width</span><span class="s2">=&quot;match_parent&quot;</span>
+        <span class="s1">android:layout_height</span><span class="s2">=&quot;1dp&quot;</span>
+        <span class="s1">android:background</span><span class="s2">=&quot;?android:attr/listDivider&quot;</span>
+        <span class="s1">app:layout_constraintBottom_toBottomOf</span><span class="s2">=&quot;parent&quot;</span>
+        <span class="s1">app:layout_constraintTop_toBottomOf</span><span class="s2">=&quot;@+id/totalIndicator&quot;</span>
+        <span class="s1">app:layout_constraintVertical_bias</span><span class="s2">=&quot;0.062&quot;</span>
+        <span class="s1">tools:layout_editor_absoluteX</span><span class="s2">=&quot;29dp&quot; </span><span class="s0">/&gt;</span>
+
+    <span class="s0">&lt;TextView</span>
+        <span class="s1">android:id</span><span class="s2">=&quot;@+id/numPeople_prompt&quot;</span>
+        <span class="s1">android:layout_width</span><span class="s2">=&quot;wrap_content&quot;</span>
+        <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span>
+        <span class="s1">android:layout_marginStart</span><span class="s2">=&quot;16dp&quot;</span>
+        <span class="s1">android:layout_marginTop</span><span class="s2">=&quot;28dp&quot;</span>
+        <span class="s1">android:text</span><span class="s2">=&quot;@string/number_of_people&quot;</span>
+        <span class="s1">android:textStyle</span><span class="s2">=&quot;bold&quot;</span>
+        <span class="s1">app:layout_constraintBottom_toBottomOf</span><span class="s2">=&quot;parent&quot;</span>
+        <span class="s1">app:layout_constraintEnd_toEndOf</span><span class="s2">=&quot;parent&quot;</span>
+        <span class="s1">app:layout_constraintHorizontal_bias</span><span class="s2">=&quot;0.014&quot;</span>
+        <span class="s1">app:layout_constraintStart_toStartOf</span><span class="s2">=&quot;parent&quot;</span>
+        <span class="s1">app:layout_constraintTop_toBottomOf</span><span class="s2">=&quot;@+id/divider&quot;</span>
+        <span class="s1">app:layout_constraintVertical_bias</span><span class="s2">=&quot;0.0&quot; </span><span class="s0">/&gt;</span>
+
+    <span class="s0">&lt;EditText</span>
+        <span class="s1">android:id</span><span class="s2">=&quot;@+id/numCustomers_in&quot;</span>
+        <span class="s1">android:layout_width</span><span class="s2">=&quot;wrap_content&quot;</span>
+        <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span>
+        <span class="s1">android:layout_marginStart</span><span class="s2">=&quot;150dp&quot;</span>
+        <span class="s1">android:layout_marginTop</span><span class="s2">=&quot;23dp&quot;</span>
+        <span class="s1">android:layout_marginEnd</span><span class="s2">=&quot;220dp&quot;</span>
+        <span class="s1">android:background</span><span class="s2">=&quot;#558BC34A&quot;</span>
+        <span class="s1">android:backgroundTint</span><span class="s2">=&quot;#558BC34A&quot;</span>
+        <span class="s1">android:ems</span><span class="s2">=&quot;10&quot;</span>
+        <span class="s1">android:hint</span><span class="s2">=&quot;@string/number_of_people&quot;</span>
+        <span class="s1">android:inputType</span><span class="s2">=&quot;number&quot;</span>
+        <span class="s1">android:textAlignment</span><span class="s2">=&quot;center&quot;</span>
+        <span class="s1">app:layout_constraintBottom_toBottomOf</span><span class="s2">=&quot;parent&quot;</span>
+        <span class="s1">app:layout_constraintEnd_toEndOf</span><span class="s2">=&quot;parent&quot;</span>
+        <span class="s1">app:layout_constraintHorizontal_bias</span><span class="s2">=&quot;0.0&quot;</span>
+        <span class="s1">app:layout_constraintStart_toStartOf</span><span class="s2">=&quot;parent&quot;</span>
+        <span class="s1">app:layout_constraintTop_toBottomOf</span><span class="s2">=&quot;@+id/divider&quot;</span>
+        <span class="s1">app:layout_constraintVertical_bias</span><span class="s2">=&quot;0.011&quot; </span><span class="s0">/&gt;</span>
+
+    <span class="s0">&lt;TextView</span>
+        <span class="s1">android:id</span><span class="s2">=&quot;@+id/totalPer_indicator&quot;</span>
+        <span class="s1">android:layout_width</span><span class="s2">=&quot;wrap_content&quot;</span>
+        <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span>
+        <span class="s1">android:layout_marginTop</span><span class="s2">=&quot;32dp&quot;</span>
+        <span class="s1">android:text</span><span class="s2">=&quot;@string/total_per_person&quot;</span>
+        <span class="s1">android:textStyle</span><span class="s2">=&quot;bold&quot;</span>
+        <span class="s1">app:layout_constraintBottom_toBottomOf</span><span class="s2">=&quot;parent&quot;</span>
+        <span class="s1">app:layout_constraintEnd_toEndOf</span><span class="s2">=&quot;parent&quot;</span>
+        <span class="s1">app:layout_constraintHorizontal_bias</span><span class="s2">=&quot;0.052&quot;</span>
+        <span class="s1">app:layout_constraintStart_toStartOf</span><span class="s2">=&quot;parent&quot;</span>
+        <span class="s1">app:layout_constraintTop_toBottomOf</span><span class="s2">=&quot;@+id/numPeople_prompt&quot;</span>
+        <span class="s1">app:layout_constraintVertical_bias</span><span class="s2">=&quot;0.308&quot; </span><span class="s0">/&gt;</span>
+
+    <span class="s0">&lt;TextView</span>
+        <span class="s1">android:id</span><span class="s2">=&quot;@+id/total_per_person&quot;</span>
+        <span class="s1">android:layout_width</span><span class="s2">=&quot;wrap_content&quot;</span>
+        <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span>
+        <span class="s1">android:layout_marginTop</span><span class="s2">=&quot;28dp&quot;</span>
+        <span class="s1">android:background</span><span class="s2">=&quot;#8C575454&quot;</span>
+        <span class="s1">android:backgroundTint</span><span class="s2">=&quot;#8C575454&quot;</span>
+        <span class="s1">app:layout_constraintBottom_toBottomOf</span><span class="s2">=&quot;parent&quot;</span>
+        <span class="s1">app:layout_constraintEnd_toEndOf</span><span class="s2">=&quot;parent&quot;</span>
+        <span class="s1">app:layout_constraintHorizontal_bias</span><span class="s2">=&quot;0.671&quot;</span>
+        <span class="s1">app:layout_constraintStart_toStartOf</span><span class="s2">=&quot;parent&quot;</span>
+        <span class="s1">app:layout_constraintTop_toBottomOf</span><span class="s2">=&quot;@+id/numCustomers_in&quot;</span>
+        <span class="s1">app:layout_constraintVertical_bias</span><span class="s2">=&quot;0.308&quot; </span><span class="s0">/&gt;</span>
+
+    <span class="s0">&lt;Button</span>
+        <span class="s1">android:id</span><span class="s2">=&quot;@+id/clearButton&quot;</span>
+        <span class="s1">android:layout_width</span><span class="s2">=&quot;wrap_content&quot;</span>
+        <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span>
+        <span class="s1">android:onClick</span><span class="s2">=&quot;clearValues&quot;</span>
+        <span class="s1">android:text</span><span class="s2">=&quot;@string/clear&quot;</span>
+        <span class="s1">app:layout_constraintBottom_toBottomOf</span><span class="s2">=&quot;parent&quot;</span>
+        <span class="s1">app:layout_constraintEnd_toEndOf</span><span class="s2">=&quot;parent&quot;</span>
+        <span class="s1">app:layout_constraintHorizontal_bias</span><span class="s2">=&quot;0.498&quot;</span>
+        <span class="s1">app:layout_constraintStart_toStartOf</span><span class="s2">=&quot;parent&quot;</span>
+        <span class="s1">app:layout_constraintTop_toTopOf</span><span class="s2">=&quot;parent&quot;</span>
+        <span class="s1">app:layout_constraintVertical_bias</span><span class="s2">=&quot;0.811&quot; </span><span class="s0">/&gt;</span>
+
+    <span class="s0">&lt;Button</span>
+        <span class="s1">android:id</span><span class="s2">=&quot;@+id/goButton&quot;</span>
+        <span class="s1">android:layout_width</span><span class="s2">=&quot;wrap_content&quot;</span>
+        <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span>
+        <span class="s1">android:layout_marginTop</span><span class="s2">=&quot;15dp&quot;</span>
+        <span class="s1">android:layout_marginBottom</span><span class="s2">=&quot;25dp&quot;</span>
+        <span class="s1">android:onClick</span><span class="s2">=&quot;splitBill&quot;</span>
+        <span class="s1">android:text</span><span class="s2">=&quot;@string/go&quot;</span>
+        <span class="s1">app:layout_constraintBottom_toTopOf</span><span class="s2">=&quot;@+id/totalPer_indicator&quot;</span>
+        <span class="s1">app:layout_constraintEnd_toEndOf</span><span class="s2">=&quot;parent&quot;</span>
+        <span class="s1">app:layout_constraintHorizontal_bias</span><span class="s2">=&quot;0.281&quot;</span>
+        <span class="s1">app:layout_constraintStart_toStartOf</span><span class="s2">=&quot;parent&quot;</span>
+        <span class="s1">app:layout_constraintTop_toBottomOf</span><span class="s2">=&quot;@+id/numPeople_prompt&quot;</span>
+        <span class="s1">app:layout_constraintVertical_bias</span><span class="s2">=&quot;0.631&quot; </span><span class="s0">/&gt;</span>
+
+<span class="s0">&lt;/androidx.constraintlayout.widget.ConstraintLayout&gt;</span></pre>
+</body>
+</html>
